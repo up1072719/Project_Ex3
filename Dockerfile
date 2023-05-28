@@ -8,11 +8,14 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Install Mosquitto MQTT broker
+RUN apt-get update && apt-get install -y mosquitto
+
 # Copy the entire app directory into the container
 COPY . .
 
-# Expose the port your Flask app is running on
-EXPOSE 8080
+# Expose the ports for Flask and Mosquitto
+EXPOSE 8080 1883
 
-# Run the Flask app
-CMD ["python", "app.py"]
+# Run the Flask app and start the Mosquitto broker
+CMD ["bash", "-c", "mosquitto & python app.py"]
