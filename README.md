@@ -13,5 +13,5 @@
 ```cd Project_Ex3/```
 
 Χτίστε και τρέξτε το docker container:
-```docker build -t my-python-app .```
-```docker run -p 8080:8080 my-python-app```
+```docker build -t Project_Ex3 .```
+```docker run -p 8080:8080 Project_Ex3```
