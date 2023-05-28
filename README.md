@@ -13,5 +13,5 @@
 ```cd Project_Ex3/```
 
 Χτίστε και τρέξτε το docker container:
-```docker build -t Project_Ex3 .```
-```docker run -p 8080:8080 Project_Ex3```
+```docker build -t project_Ex3 .```
+```docker run -p 8080:8080 project_Ex3```
