@@ -15,7 +15,7 @@ def handle_post():
     client.publish(topic, text)
     client.disconnect()
 
-    return "Your text published via MQTT: " + text
+    return "Text published via MQTT: " + text
 
 @app.route('/', methods=['GET'])
 def handle_get():
