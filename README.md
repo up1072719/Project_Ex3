@@ -8,8 +8,10 @@
 # Πώς να τρέξει σε Docker
 Κατεβάστε τα απαραίτητα αρχεία:
 ```git clone https://github.com/up1072719/Project_Ex3```
+
 Μεταβείτε στο αντίστοιχο Directory:
 ```cd Project_Ex3/```
+
 Χτίστε και τρέξτε το docker container:
 ```docker build -t my-python-app .
 docker run -p 8080:8080 my-python-app```
